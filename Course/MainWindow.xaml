@@ -6,21 +6,25 @@
         xmlns:local="clr-namespace:Course"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="Курсвая работа, Леуненко Артем, ПОВТ-20Д, 1 курс" Height="780" Width="1450" WindowStyle="ThreeDBorderWindow">
+        Title="Курсовая работа, Леуненко Артем, ПОВТ-20Д, 1 курс" Height="780" Width="1450" WindowStyle="ThreeDBorderWindow">
     <Grid Background="#ffdada" Loaded="MainLoad">
-        <Border MinWidth="400" Margin="15" Background="White" VerticalAlignment="Top" Padding="20" MaxWidth="650" CornerRadius="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="671*"/>
+        </Grid.ColumnDefinitions>
+        <Border MinWidth="400" Margin="15,15,15,0" Background="White" VerticalAlignment="Top" Padding="20" MaxWidth="650" CornerRadius="20" Grid.ColumnSpan="2">
             <Border.Effect>
                 <DropShadowEffect BlurRadius="30" Color="LightGray" ShadowDepth="0" />
             </Border.Effect>
             <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
-                <ComboBox x:Name="AppNameList" Style="{StaticResource MaterialDesignComboBox}" MaxWidth="700" MaxHeight="35" Width="400" Height="35" FontSize="16"/>               
+                <ComboBox x:Name="AppNameList" Style="{StaticResource MaterialDesignComboBox}" MaxWidth="700" MaxHeight="35" Width="400" Height="35" FontSize="16"/>
                 <Button x:Name="buttonUpdate" Content="Обновить данные" Style="{StaticResource MaterialDesignToolButton}" Margin="10" Click="Update"/>
             </StackPanel>
 
         </Border>
 
         <Border x:Name="Inform" MinWidth="400" Margin="20, 130, 20, 30" Background="White" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" 
-                Padding="30"  CornerRadius="20">
+                Padding="30"  CornerRadius="20" Grid.ColumnSpan="2">
             <Border.Effect>
                 <DropShadowEffect BlurRadius="30" Color="LightGray" ShadowDepth="0" />
             </Border.Effect>

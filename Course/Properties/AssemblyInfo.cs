@@ -8,9 +8,9 @@ using System.Windows;
 // набор атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
 [assembly: AssemblyTitle("Course")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Курсовая работа по диспиплине Технология разработки программного обесепечения, Леуненко Артем 1 курс, группа ПОВТ-20Д")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Хабаровский иститут инфокоммуникаций (филиал) Сибирского государственного унивеситета телекоммуникаций и информатики")]
 [assembly: AssemblyProduct("Course")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
@@ -19,7 +19,7 @@ using System.Windows;
 // Установка значения False для параметра ComVisible делает типы в этой сборке невидимыми
 // для компонентов COM. Если необходимо обратиться к типу в этой сборке через
 // из модели COM, установите атрибут ComVisible для этого типа в значение true.
-[assembly: ComVisible(false)]
+[assembly: ComVisible(true)]
 
 //Чтобы начать создание локализуемых приложений, задайте
 //<UICulture>CultureYouAreCodingWith</UICulture> в файле .csproj
